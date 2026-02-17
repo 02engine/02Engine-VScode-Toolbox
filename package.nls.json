@@ -1,0 +1,13 @@
+{
+  "displayName": "02Engine VSCode Toolbox",
+  "description": "一个功能丰富的 VSCode 工具箱，为开发者提供多种开发辅助工具和调试功能",
+  "command.openToolbox.title": "02Engine: 打开工具箱",
+  "command.startServer.title": "02Engine: 启动调试服务器",
+  "command.stopServer.title": "02Engine: 停止调试服务器",
+  "command.sendExtension.title": "02Engine: 发送当前扩展到 GUI",
+  "command.showStatus.title": "02Engine: 显示连接状态",
+  "command.previewBlocks.title": "02Engine: 预览积木",
+  "config.title": "02Engine 扩展调试器",
+  "config.port.description": "WebSocket 服务器端口",
+  "config.autoStart.description": "启动 VSCode 时自动启动服务器"
+}

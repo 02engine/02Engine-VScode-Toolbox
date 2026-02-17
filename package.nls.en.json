@@ -1,0 +1,13 @@
+{
+  "displayName": "02Engine VSCode Toolbox",
+  "description": "A feature-rich VSCode toolbox providing various development tools and debugging features",
+  "command.openToolbox.title": "02Engine: Open Toolbox",
+  "command.startServer.title": "02Engine: Start Debug Server",
+  "command.stopServer.title": "02Engine: Stop Debug Server",
+  "command.sendExtension.title": "02Engine: Send Current Extension to GUI",
+  "command.showStatus.title": "02Engine: Show Connection Status",
+  "command.previewBlocks.title": "02Engine: Preview Blocks",
+  "config.title": "02Engine Extension Debugger",
+  "config.port.description": "WebSocket server port",
+  "config.autoStart.description": "Automatically start the server when VSCode starts"
+}

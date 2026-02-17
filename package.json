@@ -1,0 +1,140 @@
+{
+  "name": "02engine-vscode-toolbox",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "version": "2.0.0",
+  "publisher": "02Engine",
+  "icon": "./icon.png",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "repository":"https://github.com/02engine/02engine-vscode-toolbox",
+  "categories": [
+    "Debuggers",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "02engine.openToolbox",
+        "title": "%command.openToolbox.title%",
+        "icon": "$(tools)"
+      },
+      {
+        "command": "02engine.sendExtension",
+        "title": "%command.sendExtension.title%",
+        "icon": "$(cloud-upload)"
+      },
+      {
+        "command": "02engine.previewBlocks",
+        "title": "%command.previewBlocks.title%",
+        "icon": "$(preview)"
+      },
+      {
+        "command": "02engine.startServer",
+        "title": "%command.startServer.title%"
+      },
+      {
+        "command": "02engine.stopServer",
+        "title": "%command.stopServer.title%"
+      },
+      {
+        "command": "02engine.showStatus",
+        "title": "%command.showStatus.title%"
+      }
+    ],
+    "configuration": {
+      "title": "%config.title%",
+      "properties": {
+        "02engine.port": {
+          "type": "number",
+          "default": 1101,
+          "description": "%config.port.description%"
+        },
+        "02engine.autoStart": {
+          "type": "boolean",
+          "default": false,
+          "description": "%config.autoStart.description%"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "02engine.openToolbox",
+        "key": "ctrl+shift+k",
+        "mac": "cmd+shift+k",
+        "when": "editorTextFocus && resourceExtname == .js"
+      },
+      {
+        "command": "02engine.sendExtension",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t",
+        "when": "editorTextFocus && resourceExtname == .js"
+      },
+      {
+        "command": "02engine.previewBlocks",
+        "key": "ctrl+shift+q",
+        "mac": "cmd+shift+q",
+        "when": "editorTextFocus && resourceExtname == .js"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "02engine.openToolbox",
+          "when": "resourceExtname == .js",
+          "group": "navigation@1"
+        },
+        {
+          "command": "02engine.previewBlocks",
+          "when": "resourceExtname == .js",
+          "group": "navigation@2"
+        },
+        {
+          "command": "02engine.sendExtension",
+          "when": "resourceExtname == .js",
+          "group": "navigation@3"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "02engine.openToolbox"
+        },
+        {
+          "command": "02engine.sendExtension"
+        },
+        {
+          "command": "02engine.previewBlocks"
+        },
+        {
+          "command": "02engine.startServer"
+        },
+        {
+          "command": "02engine.stopServer"
+        },
+        {
+          "command": "02engine.showStatus"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.74.0",
+    "@types/ws": "^8.5.4",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}
