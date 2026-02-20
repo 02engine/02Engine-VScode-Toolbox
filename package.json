@@ -2,7 +2,7 @@
   "name": "02engine-vscode-toolbox",
   "displayName": "%displayName%",
   "description": "%description%",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "publisher": "02Engine",
   "icon": "./icon.png",
   "engines": {
