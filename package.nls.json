@@ -7,6 +7,8 @@
   "command.sendExtension.title": "02Engine: 发送当前扩展到 GUI",
   "command.showStatus.title": "02Engine: 显示连接状态",
   "command.previewBlocks.title": "02Engine: 预览积木",
+  "command.saveAndSendComment.title": "02Engine: 保存并发送注释",
+  "command.saveCurrentComment.title": "02Engine: 保存到 02Engine",
   "config.title": "02Engine 扩展调试器",
   "config.port.description": "WebSocket 服务器端口",
   "config.autoStart.description": "启动 VSCode 时自动启动服务器"

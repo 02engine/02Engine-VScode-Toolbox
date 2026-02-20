@@ -45,6 +45,16 @@
       {
         "command": "02engine.showStatus",
         "title": "%command.showStatus.title%"
+      },
+      {
+        "command": "02engine.saveAndSendComment",
+        "title": "%command.saveAndSendComment.title%",
+        "icon": "$(check)"
+      },
+      {
+        "command": "02engine.saveCurrentComment",
+        "title": "%command.saveCurrentComment.title%",
+        "icon": "$(save)"
       }
     ],
     "configuration": {
@@ -98,6 +108,11 @@
           "command": "02engine.sendExtension",
           "when": "resourceExtname == .js",
           "group": "navigation@3"
+        },
+        {
+          "command": "02engine.saveCurrentComment",
+          "when": "02engine.isCommentEditor",
+          "group": "navigation@0"
         }
       ],
       "commandPalette": [
@@ -118,6 +133,12 @@
         },
         {
           "command": "02engine.showStatus"
+        },
+        {
+          "command": "02engine.saveAndSendComment"
+        },
+        {
+          "command": "02engine.saveCurrentComment"
         }
       ]
     }

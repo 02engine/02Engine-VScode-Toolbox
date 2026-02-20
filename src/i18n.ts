@@ -28,7 +28,9 @@ const translations: Translations = {
         'tool.sendExtension.description': '将当前扩展代码发送到 GUI 客户端',
         'tool.serverManagement.name': '服务器管理',
         'tool.serverManagement.description': '启动、停止或查询服务器状态',
-        
+        'tool.saveAndSendComment.name': '保存并发送注释',
+        'tool.saveAndSendComment.description': '保存当前注释并发送回 02Engine',
+
         // 工具箱菜单
         'toolboxPlaceholder': '选择要使用的工具',
         'noToolsAvailable': '暂无可用工具',
@@ -85,6 +87,25 @@ const translations: Translations = {
         'quickPickSend': '$(file-code) 发送当前扩展',
         'quickPickRunning': '运行中',
         'quickPickStopped': '未运行',
+
+        // 注释编辑器
+        'commentEditorTitle': '编辑注释 - {targetName}',
+        'unnamedTarget': '未命名目标',
+        'commentUpdated': '注释已更新并发送回 02Engine',
+        'noClientsToUpdate': '没有可用的客户端来更新注释',
+        'selectFileTypePlaceholder': '选择文件类型来编辑 {targetName} 的注释',
+        'fileTypeMdDesc': 'Markdown 格式',
+        'fileTypeMdDetail': '以 Markdown 文件形式打开，适合富文本注释',
+        'fileTypeJsDesc': 'JavaScript 格式',
+        'fileTypeJsDetail': '以 JavaScript 文件形式打开，适合代码注释',
+        'commentEditorOpened': '已打开 {targetName} 的注释编辑器',
+        'saveAndSend': '保存并发送',
+        'commentEditorNotFound': '未找到注释编辑器',
+        'saveCommentError': '保存注释失败: {error}',
+        'noActiveCommentEditor': '没有活动的注释编辑器',
+        'selectCommentToSave': '选择要保存的注释',
+        'saveAndSendComment': '02Engine: 保存并发送注释',
+        'saveCurrentComment': '02Engine: 保存到 02Engine',
     },
     'en': {
         // Activation and logging
@@ -105,7 +126,9 @@ const translations: Translations = {
         'tool.sendExtension.description': 'Send current extension code to GUI clients',
         'tool.serverManagement.name': 'Server Management',
         'tool.serverManagement.description': 'Start, stop, or view server status',
-        
+        'tool.saveAndSendComment.name': 'Save & Send Comment',
+        'tool.saveAndSendComment.description': 'Save current comment and send back to 02Engine',
+
         // Toolbox menu
         'toolboxPlaceholder': 'Select a tool to use',
         'noToolsAvailable': 'No tools available',
@@ -162,6 +185,25 @@ const translations: Translations = {
         'quickPickSend': '$(file-code) Send current extension',
         'quickPickRunning': 'Running',
         'quickPickStopped': 'Not running',
+
+        // Comment editor
+        'commentEditorTitle': 'Edit Comment - {targetName}',
+        'unnamedTarget': 'Unnamed Target',
+        'commentUpdated': 'Comment updated and sent back to 02Engine',
+        'noClientsToUpdate': 'No available clients to update comment',
+        'selectFileTypePlaceholder': 'Select file type to edit {targetName}\'s comment',
+        'fileTypeMdDesc': 'Markdown format',
+        'fileTypeMdDetail': 'Open as Markdown file, suitable for rich text comments',
+        'fileTypeJsDesc': 'JavaScript format',
+        'fileTypeJsDetail': 'Open as JavaScript file, suitable for code comments',
+        'commentEditorOpened': 'Opened comment editor for {targetName}',
+        'saveAndSend': 'Save & Send',
+        'commentEditorNotFound': 'Comment editor not found',
+        'saveCommentError': 'Failed to save comment: {error}',
+        'noActiveCommentEditor': 'No active comment editor',
+        'selectCommentToSave': 'Select comment to save',
+        'saveAndSendComment': '02Engine: Save & Send Comment',
+        'saveCurrentComment': '02Engine: Save to 02Engine',
     }
 };
 

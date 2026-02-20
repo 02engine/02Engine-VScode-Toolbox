@@ -7,6 +7,8 @@
   "command.sendExtension.title": "02Engine: Send Current Extension to GUI",
   "command.showStatus.title": "02Engine: Show Connection Status",
   "command.previewBlocks.title": "02Engine: Preview Blocks",
+  "command.saveAndSendComment.title": "02Engine: Save & Send Comment",
+  "command.saveCurrentComment.title": "02Engine: Save to 02Engine",
   "config.title": "02Engine Extension Debugger",
   "config.port.description": "WebSocket server port",
   "config.autoStart.description": "Automatically start the server when VSCode starts"
